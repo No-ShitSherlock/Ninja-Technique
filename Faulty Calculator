@@ -1,0 +1,29 @@
+print("Welcome to the Calculator , I can perform four operation\n")
+print("[add], [subtraction],[multiply],[divide]")
+print("Choose your operation first")
+n1 = input()
+print("Enter your first Number")
+n2=int(input())
+print("Enter your second number")
+n3=int(input())
+if n1 == "multiply" and n2 == 45 and n3 == 3:
+    print("Your product is 555")
+elif n1 == "multiply" and n2 == 3 and n3 == 45:
+    print("Your product is 555")
+elif n1 == "add" and n2 == 56 and n3 == 9:
+    print("Your sum is 77")
+elif n1 == "add" and n2 == 9 and n3 == 56:
+    print("Your sum is 77 ")
+elif n1 == "divide" and n2 == 56 and n3 == 6:
+    print("Your quotient is 4")
+elif n1 == "multiply":
+    print("Your product is", int(n2)*int(n3))
+elif n1 == "add":
+    print("Your sum is", int(n2)+int(n3))
+elif n1 == "divide":
+    print("Your quotient is", int(n2)/int(n3))
+elif n1 == "subtraction":
+    print("Your difference is", int(n2)-int(n3))
+
+
+
