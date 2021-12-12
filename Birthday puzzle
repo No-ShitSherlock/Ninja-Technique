@@ -1,0 +1,29 @@
+n=35
+print("So you have to guess my age to win an Iphone 14 pro")
+print("You have total 9 guesses")
+print("Let s'Go")
+i=1
+while(i<10):
+    r=int(input())
+    i = i+1
+    if r>35 and r<45:
+        print("You are very close but i am not that old yet")
+        print("You have", 10-i, "chances left")
+        continue
+    elif r<35 and r>25:
+        print("I know i look so young but don't get confused by  my looks")
+        print("You have", 10-i, "chances left")
+        continue
+    elif r<=25:
+        print("do i look like a kid to you")
+        print("You have", 10 - i, "chances left")
+        continue
+    elif r>=45:
+        print("Bro you must be that old not me")
+        print("You have", 10 - i, "chances left")
+        continue
+    elif r == 35:
+        print("Congratulations you got your iphone")
+        print("You took", i-1, "chances")
+        break
+print("Game Over")
