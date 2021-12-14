@@ -1,0 +1,89 @@
+
+def getdate():
+    import datetime
+    return datetime.datetime.now()
+f2 = getdate()
+nt = ".\n"
+exercise = "What exercise did you do"
+
+while True:
+    print("Who are you")
+    print("Type 1 for Shubham, Type 2 for Sangwan, Type 3 for Yash")
+    n1 = int(input())
+    print("Type 0 to access food list and 1 for exercise list")
+    n2 = int(input())
+    print("Do you wanna log or retrieve")
+    print("0 for log and 1 for retrieve")
+    n3 = int(input())
+    if n1 == 1:
+        if n2 == 0 and n3 == 0:
+            print("Welcome Mr. Shubham Rai, What did you consume just now")
+            f1 = input()
+            with open("sfood.txt", "a") as f:
+                f.write(str(f2) + f1 + nt)
+        if n2 == 0 and n3 == 1:
+            with open("sfood.txt", "r") as f:
+                a = f.read()
+                print(a)
+        elif n2 == 1 and n3 == 0:
+            print("Welcome Mr. Shubham Rai", exercise)
+            f3 = input()
+            with open("shubham genetically fit .txt", "a") as f:
+                f.write(str(f2)+"  " + f3+nt)
+        elif n2 == 1 and n3 == 1:
+            with open("shubham genetically fit .txt", "r") as f:
+                a1 = f.read()
+                print(a1)
+
+    if n1 == 2:
+        if n2 == 0 and n3 == 0:
+            print("Welcome Mr. Sangwan, What did you consume just now")
+            with open("sangwan food .txt", "a") as f:
+                sangwanfood = input()
+                f.write(str(f2) + (sangwanfood) + nt)
+        elif n2 == 0 and n3 == 1:
+            print("Welcome Mr. Sangwan")
+            with open("sangwan food .txt", "r") as f:
+                sangwaneat = f.read()
+                print(sangwaneat)
+        elif n2 == 1 and n3 == 0:
+            print("Welcome Mr. Sangwan", exercise)
+
+            fsss = input()
+            with open("sangwan lamba .txt","a") as f:
+                f.write(str(f2)+"  " + (fsss)+nt)
+        elif n2 == 1 and n3 == 1:
+            with open("sangwan lamba .txt", "r") as f:
+                dsfasdf = f.read()
+                print(dsfasdf)
+    if n1 == 3:
+        if n2 == 0 and n3 == 0:
+            print("Welcome Mr. Yash, What did you consume just now")
+            y1 = input()
+            with open("yash food.txt", "a") as f:
+                f.write(str(f2) + y1 + nt)
+        if n2 == 0 and n3 == 1:
+            with open("yash food.txt", "r") as f:
+                yui = f.read()
+                print(yui)
+        elif n2 == 1 and n3 == 0:
+            print("Welcome Mr. Yash ", exercise)
+            y2 = input()
+            with open("yash mota.txt", "a") as f:
+                f.write(str(f2)+"   " + y2+nt)
+        elif n2 == 1 and n3 == 1:
+            with open("yash mota.txt", "r") as f:
+                yf = f.read()
+                print(yf)
+    rrr = input("Do you wanna re run y/n \n")
+    if rrr != "y":
+        break
+    else:
+        continue
+
+
+
+
+
+
+
